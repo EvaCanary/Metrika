@@ -74,8 +74,10 @@ text-decoration: underline;
     color: rgb(255, 255, 255);
 }
 .hero__img {
-    max-width: 1150px;
+    width: 100%;
     height: 500px;
+    object-fit: cover;
+    object-position: 30%;
 }
 /*+ 2 мини блок-карточка*/
 
@@ -95,7 +97,7 @@ text-decoration: underline;
     color: #121212;
 }
 .about__btn {
-    width: 250px;
+    max-width: 250px;
     font-weight: 400px;
     font-size: 20px;
     line-height: 60px;
@@ -139,7 +141,10 @@ text-decoration: underline;
     color: #121212;
 }
 .project__img {
-    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 450px;
 }
 .project__link {
     font-size: 20px;
@@ -168,6 +173,8 @@ text-decoration: underline;
     border: 1px solid #AD1818;
     color: #AD1818;
     background-color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .project__btn:hover {
     color: #FFFFFF;
@@ -179,9 +186,10 @@ text-decoration: underline;
     padding-bottom: 150px;
     background-color: #121212;
 }
-.service__container {
-    display: flex;
-    flex-wrap: wrap;
+.service__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
 }
 .service__title {
     margin-bottom: 34px;
@@ -195,20 +203,63 @@ text-decoration: underline;
 }
 .service__item {
     display: inline-block;
-    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 106px;
 }
 .service__item:nth-last-child(1){
     margin-bottom: 0px;
 }
+.service__price {
+    position: absolute;
+    padding: 7px 26px 6px 26px;
+    top: 30px;
+    left: 30px;
+    font-family: 'Manrope' , sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.66px;
+    color: #FFF;
+    border: 1px solid #AD1818;
+    background-color: #AD1818;
+    border-radius: 5px;
+}
 .service__img {
-    max-width: 1150px;
-    height: 270px;
+    z-index: 1;
+    width: 100%;
+    object-fit: cover;
+   object-position: 50% 50%;
+    height: 389px;
 }
 .service__text {
+    max-width: 344px;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.9px;
     color: #FFF;
+}
+.service__btn {
+    width: 100%;
+    max-height: 153px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: -0.9px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #AD1818;
+    color: #FFFFFF;
+    background-color: #AD1818;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service__btn:hover {
+    color: #AD1818;
+    background-color: #FFFFFF;
 }
 .reviews {
     display: block;
@@ -223,7 +274,6 @@ text-decoration: underline;
 .reviews__item {
     flex: 1 1 33.333%;
     display: inline-block;
-    margin-bottom: 60px;
 }
 .reviews__item:nth-last-child(1) {
     flex: none;
@@ -267,7 +317,7 @@ text-decoration: underline;
     position: absolute;
     z-index: 1;
     bottom: 60px;
-    width: 430px;
+    max-width: 430px;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -276,22 +326,21 @@ text-decoration: underline;
     color: #FFF;
 }
 .contacts {
-    padding-top: 186px;
-    padding-bottom: 160px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 .contacts__title {
-    margin-bottom: 32px;
-    position: relative;
+    margin-bottom: 74px;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.54px;
     text-transform: uppercase;
 }
-.contacts__title:before {
+.contacts__number:before {
     content: '';
     display: block;
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     width: 24px;
     height: 24px;
     background-image: url('../resources/ic_iphone.png');
@@ -300,29 +349,53 @@ text-decoration: underline;
     background-position: 50%;
 }
 .contacts__number {
-    margin-bottom: 30px;
+    position: relative;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
-    line-height: 60px; /* 100% */
+    line-height: 60px; 
     letter-spacing: -1.8px;
     color:#121212;
+}
+.contacts__number:hover {
+    opacity: 0.5;
+    border-bottom: solid #121212;
+}
+.contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 58px 104px;
 }
 .number__line {
     color: #121212;
     text-decoration: none;
 }
-.contacts__mail{
+.contacts__mail:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../resources/ic_letter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.contacts__mail {
+    position: relative;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: -1.8px;
+}
+.contacts__mail:hover {
     opacity: 0.5;
+    border-bottom: 2px solid #121212;
 }
 .mail__line {
-    color: #121212;
     text-decoration: none;
-    border-bottom: 2px solid #121212;
+    color: #121212;
 }
 .footer {
     padding: 60px 0 30px; 
@@ -332,7 +405,6 @@ text-decoration: underline;
 .footer__nav {
     padding-bottom: 87px;
     display: flex;
-    flex-direction: row;
     flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -388,17 +460,130 @@ text-decoration: underline;
     font-weight: 400;
 }}
 @media (max-width: 928px) {
+    .hero__title {
+    font-size: 50px;
+    line-height: 40px;
+    }
+    .contacts {
+    padding-top: 120px;
+    padding-bottom: 80px;
+        }
 .service {
     width: 100%;
     margin: 0 auto;
     max-width: cover;
+    padding-bottom: 80px;
+}
+.service__price {
+    padding: 6px 26px 5px 26px;
+    top: 30px;
+    left: 30px;
+    font-family: 'Manrope' , sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.service__btn {
+    text-align: center;
     
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+}
+.service__item {
+    padding-bottom: 80px;
+}
+.about__text {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: normal;
 }}
-@media (max-width: 350px) {
-    .service {
-      width: 100%;
-      margin: 0 auto;
-      max-width: cover;
-   
+@media (max-width: 576px) {
+    .about__btn {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px
     }
-  }
+.service__box {
+    grid-template-columns: 1fr ;
+    }
+.hero__title {
+    padding-bottom: 30px;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
+    line-height: 31.621px; 
+    }
+    .contacts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    }
+.contacts__mail {
+    font-size: 35px;
+    line-height: 46px;
+    }
+.service {
+    width: 100%;
+    margin: 0 auto;
+    max-width: cover;
+    }
+    .service__img {
+        max-height: 240px;
+    }
+    .service__item {
+        padding-bottom: 60px;
+    }
+.reviews__container {
+    display: inline-flex;
+    }
+.reviews__item {
+    flex: auto; 
+    }
+.reviews__item:nth-last-child(1) {
+    width: 100%;
+    }
+.project__img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    }
+.contacts__number {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.621px;
+    letter-spacing: -1.05px;
+    }
+    .footer__nav {
+        padding-bottom: 41px;
+    }
+}
+@media (max-width: 414px) {
+.about__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    }
+.project__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+}
+.service__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+}
+.reviews__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+}
+.service__img {
+    height: 240px;
+}
+}

@@ -55,7 +55,7 @@
           </div>
         </div>
       </section>
-      <section class="about" style="display: none">
+      <section class="about">
         <div class="container">
           <div class="about__container">
             <h2 id="section-1" class="about__title">О НАС</h2>
@@ -66,11 +66,11 @@
               каждого интерьера, вплоть до каждой детали — нацелены на
               результат.
             </p>
-            <a class="about__btn" href="#!">Посмотреть услуги</a>
+            <a class="about__btn" href="section">Посмотреть услуги</a>
           </div>
         </div>
       </section>
-      <section class="project" style="display: none">
+      <section class="project">
         <div class="container">
           <div class="project__container">
             <h2 id="section-2" class="project__title">ПРОЕКТЫ</h2>
@@ -105,50 +105,58 @@
           </div>
         </div>
       </section>
-      <section class="service" style="display: none">
+      <section id="section-3" class="service">
         <div class="container">
           <div class="service__container">
-            <h2 id="section-3" class="service__title">УСЛУГИ</h2>
-            <div class="service__item">
-              <img
-                class="service__img"
-                src="./resources/Service-1.png"
-                alt="Чертежи и карандаш"
-              />
-              <h3 class="service__text">Планировочное решение — от 2500₽/м²</h3>
-            </div>
-            <div class="service__item">
-              <img
-                class="service__img"
-                src="./resources/Service-2.png"
-                alt="Цветовая палитра пантон"
-              />
-              <h3 class="service__text">Дизайн-проект — от 3000₽/м²</h3>
-            </div>
-            <div class="service__item">
-              <img
-                class="service__img"
-                src="./resources/Service-3.png"
-                alt="Архитектор чертит проект"
-              />
-              <h3 class="service__text">
-                Авторский надзор — от 30 000₽ в месяц
-              </h3>
-            </div>
-            <div class="service__item">
-              <img
-                class="service__img"
-                src="./resources/Service-4.png"
-                alt="Склад"
-              />
-              <h3 class="service__text">
-                Комплектация — 5% от стоимости спецификации
-              </h3>
-            </div>
+            <h2 class="service__title">УСЛУГИ</h2>
+            <ul class="service__box">
+              <li class="service__item">
+                <p class="service__price">от 2500₽/м²</p>
+                <img
+                  class="service__img"
+                  src="./resources/Service-1.png"
+                  alt="Чертежи и карандаш"
+                />
+                <h3 class="service__text">Планировочное решение</h3>
+              </li>
+              <li class="service__item">
+                <p class="service__price">от 3000₽/м²</p>
+                <img
+                  class="service__img"
+                  src="./resources/Service-2.png"
+                  alt="Цветовая палитра пантон"
+                />
+                <h3 class="service__text">Дизайн-проект</h3>
+              </li>
+              <li class="service__item">
+                <p class="service__price">от 30 000₽/мес</p>
+                <img
+                  class="service__img"
+                  src="./resources/Service-3.png"
+                  alt="Архитектор чертит проект"
+                />
+                <h3 class="service__text">Авторский надзор</h3>
+              </li>
+              <li class="service__item">
+                <p class="service__price">5% от стоимости</p>
+                <img
+                  class="service__img"
+                  src="./resources/Service-4.png"
+                  alt="Склад"
+                />
+                <h3 class="service__text">Комплектация</h3>
+              </li>
+            </ul>
+            <button
+              class="service__btn"
+              onclick="document.location='page/new.html'"
+            >
+              Заказать услугу
+            </button>
           </div>
         </div>
       </section>
-      <section class="reviews" style="display: none">
+      <section class="reviews">
         <div class="container">
           <h2 class="reviews__title">ОТЗЫВЫ</h2>
           <ul class="reviews__container">
@@ -198,7 +206,7 @@
           </ul>
         </div>
       </section>
-      <section class="ex-project" style="display: none">
+      <section class="ex-project">
         <div class="container">
           <div class="ex-project__container">
             <p class="ex-project__text">
@@ -207,10 +215,10 @@
           </div>
         </div>
       </section>
-      <section class="contacts" style="display: none">
+      <section class="contacts">
         <div class="container">
+          <h2 id="section-4" class="contacts__title">КОНТАКТЫ</h2>
           <div class="contacts__container">
-            <h2 id="section-4" class="contacts__title">КОНТАКТЫ</h2>
             <p class="contacts__number">
               <a href="tel:+79358954535" class="number__line"
                 >+7 935 895-45-35</a
@@ -226,7 +234,7 @@
       </section>
     </main>
     <footer>
-      <section class="footer" style="display: none">
+      <section class="footer">
         <div class="container">
           <div class="footer__nav">
             <ul class="footer__menu">
