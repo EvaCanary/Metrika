@@ -50,7 +50,7 @@ text-decoration: underline;
 
 }
 .hero__title {
-    padding-bottom: 88px;
+    padding-bottom: 30px;
     max-width: 956px;
     font-size: 60px;
     font-weight: 400;
@@ -59,7 +59,6 @@ text-decoration: underline;
     color: #121212;
 }
 .hero__wrapper {
-    position: relative;
     height: 500px;
 }
 .hero__text { 
@@ -74,6 +73,7 @@ text-decoration: underline;
     color: rgb(255, 255, 255);
 }
 .hero__img {
+    position: relative;
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -160,7 +160,7 @@ text-decoration: underline;
 }
 .project__btn {
     width: 100%;
-    height: 153px;
+    max-height: 153px;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -280,6 +280,7 @@ text-decoration: underline;
     width: 70%;
 }
 .reviews__title {
+    padding-bottom: 30px;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.54px;
@@ -306,12 +307,22 @@ text-decoration: underline;
     background-size: cover;
     background-size: no-repeat;
     background-position: 50%, 50%;
-    height: 717px;
+    max-height: 717px;
     margin: 0 auto;
 }
 .ex-project__container {
     position: relative;
     height: 717px;
+}
+.ex-project__naming {
+   margin: 0 auto;
+    padding-left:35px;
+    padding-top: 80px;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+    color: #FFF;
 }
 .ex-project__text { 
     position: absolute;
@@ -404,9 +415,6 @@ text-decoration: underline;
 }
 .footer__nav {
     padding-bottom: 87px;
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: space-between;
     align-items: center;
     font-size: 18px;
     letter-spacing: -0.54px;
@@ -414,22 +422,23 @@ text-decoration: underline;
 .footer__menu {
     margin: 0 auto;
     list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
     box-sizing: border-box;
     line-height: normal;
+    display: flex;
+    justify-content: center;
 }
 .footer__menu li {
-    display: inline-block;
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
     transition: all 07s;
     color: #121212;
+    padding: 10px 15px;
 }
 .footer__menu li a {
-    display: inline-block;
     text-decoration: none;
     transition: all .07s;
     color: #FFF;
-    padding: 0 22px ;
 }
 .footer__menu li a:hover {
     opacity: 50%;
@@ -461,8 +470,12 @@ text-decoration: underline;
 }}
 @media (max-width: 928px) {
     .hero__title {
+    padding-bottom: 30px;
     font-size: 50px;
-    line-height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.5px;
     }
     .contacts {
     padding-top: 120px;
@@ -483,36 +496,102 @@ text-decoration: underline;
     font-style: normal;
     font-weight: 400;
 }
-.service__btn {
-    text-align: center;
-    
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: -0.66px;
-}
+
 .service__item {
     padding-bottom: 80px;
+}
+.ex-project__naming {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color: #FFF;
 }
 .about__text {
     font-weight: 400;
     font-size: 35px;
     line-height: normal;
+}
+.footer__menu li {
+    padding: 10px 30px;
 }}
 @media (max-width: 576px) {
+    .hero__title {
+    padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31.621px; 
+    font-size: 30px;
+    letter-spacing: -0.9px;
+        }
+    .hero__img {
+        max-height: 304px;
+    }
+    .about__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.42px;
+    }
+    .about__text {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+    }
     .about__btn {
+    height: 51px;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: -0.48px
+    letter-spacing: -0.48px;
+    }
+    .project {
+    margin-bottom: 144px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+}
+.project__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+}
+.project__img {
+    object-fit: cover;font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    height: 250px;
+}
+.project__text {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+}
+.project__btn {
+    line-height: 100px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+}
+.service {
+    width: 100%;
+    margin: 0 auto;
+    max-width: cover;
     }
 .service__box {
     grid-template-columns: 1fr ;
     }
-.hero__title {
-    padding-bottom: 30px;
-    font-size: 30px;
-    line-height: 32px;
+    .service__text {
+    font-size: 18px;
     font-weight: 400;
-    line-height: 31.621px; 
+    letter-spacing: -0.54px;
+    }
+.service__btn {
+    text-align: center;
+    line-height:100px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.66px;
     }
     .contacts {
     padding-top: 80px;
@@ -522,17 +601,33 @@ text-decoration: underline;
     font-size: 35px;
     line-height: 46px;
     }
-.service {
-    width: 100%;
-    margin: 0 auto;
-    max-width: cover;
+    .service__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.42px;
     }
-    .service__img {
-        max-height: 240px;
+.service__img {
+    max-height: 240px;
     }
     .service__item {
-        padding-bottom: 60px;
+    padding-bottom: 60px;
     }
+.reviews {
+    padding: 80px 0 80px;
+}
+.reviews__name {
+    font-size: 25px;
+    letter-spacing: -0.75px;
+    font-weight: 400;
+    line-height: normal;
+}
+.reviews__review {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
 .reviews__container {
     display: inline-flex;
     }
@@ -542,11 +637,18 @@ text-decoration: underline;
 .reviews__item:nth-last-child(1) {
     width: 100%;
     }
-.project__img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-    }
+.ex-project {
+    max-height: 408px;
+}
+.ex-project__naming {
+    padding-top: 61px;
+    padding-left: 0;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+    color: #FFF;
+}
 .contacts__number {
     font-size: 35px;
     font-style: normal;
@@ -554,29 +656,9 @@ text-decoration: underline;
     line-height: 45.621px;
     letter-spacing: -1.05px;
     }
-    .footer__nav {
-        padding-bottom: 41px;
+.footer__nav {
+    padding-bottom: 41px;
     }
-}
-@media (max-width: 414px) {
-.about__title {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.42px;
-    }
-.project__title {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.42px;
-}
-.service__title {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.42px;
-}
 .reviews__title {
     font-size: 14px;
     font-weight: 400;
@@ -585,5 +667,37 @@ text-decoration: underline;
 }
 .service__img {
     height: 240px;
+}
+.ex-project__container {
+height: 408px;
+}
+.ex-project__text {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -0.57px;
+}
+.contacts__title {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+}
+.menu__link {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.footer {
+    padding-top: 30px;
+    padding-bottom: 26px;
+}
+.footer__nav {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.bottom__title {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.39px;
 }
 }
