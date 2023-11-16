@@ -11,7 +11,6 @@ body {
 .header__logo {
    width: 127px;
    height: 22px;
-   
 }
 .header__nav {
     margin-bottom: 74px;
@@ -19,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.header__menu {
+.nav__menu {
     font-size: 18px;
     letter-spacing: -0.54px;
     list-style-type: none;
@@ -30,17 +29,17 @@ body {
     display: flex;
 }
 
-.header__menu li {
+.header__menu {
     display: inline-block;
     color: #121212;
 }
-.header__menu li a {
+.header__menu a {
     margin-left: 60px;
     text-decoration: none;
     transition: all .07s;
     color: #121212;
 }
-.header__menu li a:hover {
+.header__menu a:hover {
 opacity: 50%;
 text-decoration: underline;
 }
@@ -59,7 +58,8 @@ text-decoration: underline;
     color: #121212;
 }
 .hero__wrapper {
-    height: 500px;
+    position: relative;
+    max-height: 500px;
 }
 .hero__text { 
     position: absolute;
@@ -85,10 +85,12 @@ text-decoration: underline;
     max-width: 1048px;
 }
 .about__title {
+    line-height: normal;
     margin-bottom: 30px;
 }
 .about__text {
     margin-bottom: 30px;
+    max-width: 1048px;
     font-size: 45px;
     font-style: normal;
     font-weight: 400;
@@ -132,7 +134,6 @@ text-decoration: underline;
     margin: 0 auto;
 }
 .project__text {
-    margin-bottom: 15px;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -233,6 +234,7 @@ text-decoration: underline;
     height: 389px;
 }
 .service__text {
+    line-height: normal;
     max-width: 344px;
     font-size: 30px;
     font-weight: 400;
@@ -265,6 +267,9 @@ text-decoration: underline;
     display: block;
     padding-top: 150px;
     padding-bottom: 157px;
+}
+.reviews__title {
+    line-height: normal;
 }
 .reviews__container {
     display: flex;
@@ -409,42 +414,34 @@ text-decoration: underline;
     color: #121212;
 }
 .footer {
-    padding: 60px 0 30px; 
+    padding: 50px 0 30px;
     background-color: #121212;
     width: 100%;
 }
-.footer__nav {
-    padding-bottom: 87px;
-    align-items: center;
+.footer__inner{
     font-size: 18px;
     letter-spacing: -0.54px;
-}
-.footer__menu {
     margin: 0 auto;
+}
+.nav {
+    padding-bottom: 87px;
+    justify-content: center;
     list-style-type: none;
     box-sizing: border-box;
     line-height: normal;
     display: flex;
-    justify-content: center;
 }
-.footer__menu li {
+.nav__link {
+    padding: 10px 23px;
     display: block;
     flex-direction: row;
     flex-wrap: nowrap;
-    transition: all 07s;
-    color: #121212;
-    padding: 10px 15px;
-}
-.footer__menu li a {
-    text-decoration: none;
-    transition: all .07s;
     color: #FFF;
+    text-decoration: none;
+    transition: all 07s;
 }
-.footer__menu li a:hover {
-    opacity: 50%;
-}
-.footer__menu li a:first-child {
-    margin: 0 auto;
+.nav__link:hover {
+    opacity: 0.5%;
 }
 .footer__bottom {
     display: flex;
@@ -462,14 +459,19 @@ text-decoration: underline;
     text-decoration: none;
     color: #FFF ;
 }
-@media (max-width: 1151px) {
+@media (max-width: 1150px) {
 .about__text { 
     width: 628;
     font-size: 35px;
     font-weight: 400;
-}}
+}
+}
 @media (max-width: 928px) {
-    .hero__title {
+.hero {
+    margin-bottom: 120px;
+}
+.hero__title {
+    max-width: 802px;
     padding-bottom: 30px;
     font-size: 50px;
     font-style: normal;
@@ -477,7 +479,29 @@ text-decoration: underline;
     line-height: 60px;
     letter-spacing: -1.5px;
     }
-    .contacts {
+.hero__text {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+}
+.about {
+    margin-bottom: 120px;
+}
+.about__title {
+    margin-bottom: 30px;
+}
+.about__text {
+    max-width: 690px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: normal;
+}
+.project {
+    margin-bottom: 103px;
+}
+.project__item {
+    margin-bottom: 80px;
+}
+.contacts {
     padding-top: 120px;
     padding-bottom: 80px;
         }
@@ -485,6 +509,9 @@ text-decoration: underline;
     width: 100%;
     margin: 0 auto;
     max-width: cover;
+    padding-bottom: 120px;
+}
+.service__item {
     padding-bottom: 80px;
 }
 .service__price {
@@ -496,9 +523,12 @@ text-decoration: underline;
     font-style: normal;
     font-weight: 400;
 }
-
-.service__item {
-    padding-bottom: 80px;
+.reviews {
+    padding-top: 117px;
+    padding-bottom: 120px;
+}
+.ex-project__container {
+    max-height: 536px;
 }
 .ex-project__naming {
     font-size: 20px;
@@ -506,48 +536,93 @@ text-decoration: underline;
     letter-spacing: -0.6px;
     color: #FFF;
 }
-.about__text {
+.ex-project__text {
+    padding-left: 35px;
+    max-width: 377px;
+    font-size: 25px;
     font-weight: 400;
-    font-size: 35px;
     line-height: normal;
+    letter-spacing: -0.75px;
+}
+.contacts__title {
+    line-height: normal;
+    margin-bottom: 74px;
+}
+.contacts__container {
+    flex-wrap: nowrap;
+}
+.contacts__number {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px; 
+    letter-spacing: -1.35px;
+}
+.contacts__mail {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px; 
+    letter-spacing: -1.35px;
 }
 .footer__menu li {
     padding: 10px 30px;
 }}
+@media (max-width: 788px) {
+    .contacts__container {
+    flex-wrap: wrap;
+}
+}
 @media (max-width: 576px) {
-    .hero__title {
+.hero {
+    margin-bottom: 80px;
+    }
+.hero__title {
+    max-width: 348px;
     padding-bottom: 25px;
     font-size: 30px;
     font-weight: 400;
     line-height: 31.621px; 
-    font-size: 30px;
     letter-spacing: -0.9px;
         }
-    .hero__img {
-        max-height: 304px;
+.hero__img {
+    max-height: 304px;
     }
-    .about__title {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.42px;
+.hero__text {
+    max-width: 312px;
+    left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
     }
-    .about__text {
+.about {
+    margin-bottom: 80px;
+    }
+.about__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    }
+.about__text {
     font-size: 22px;
     font-weight: 400;
+    line-height: normal;
     letter-spacing: -0.66px;
     }
-    .about__btn {
+.about__btn {
     height: 51px;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.48px;
     }
-    .project {
+.project {
     margin-bottom: 144px;
     font-size: 22px;
     font-weight: 400;
     letter-spacing: -0.66px;
+}
+.project__item {
+    margin-bottom: 60px;
 }
 .project__title {
     font-size: 14px;
@@ -556,7 +631,8 @@ text-decoration: underline;
     letter-spacing: -0.42px;
 }
 .project__img {
-    object-fit: cover;font-size: 30px;
+    object-fit: cover;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     width: 100%;
@@ -574,6 +650,8 @@ text-decoration: underline;
     letter-spacing: -0.66px;
 }
 .service {
+    padding-bottom: 80px;
+    padding-top: 80px;
     width: 100%;
     margin: 0 auto;
     max-width: cover;
@@ -581,10 +659,25 @@ text-decoration: underline;
 .service__box {
     grid-template-columns: 1fr ;
     }
-    .service__text {
+.service__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    }
+.service__img {
+    max-height: 240px;
+    }
+.service__item {
+    padding-bottom: 60px;
+    }
+.service__text {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.54px;
+    }
+    .service__img {
+        height: 240px;
     }
 .service__btn {
     text-align: center;
@@ -593,25 +686,13 @@ text-decoration: underline;
     font-weight: 400;
     letter-spacing: -0.66px;
     }
-    .contacts {
+.contacts {
     padding-top: 80px;
     padding-bottom: 80px;
     }
 .contacts__mail {
     font-size: 35px;
     line-height: 46px;
-    }
-    .service__title {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.42px;
-    }
-.service__img {
-    max-height: 240px;
-    }
-    .service__item {
-    padding-bottom: 60px;
     }
 .reviews {
     padding: 80px 0 80px;
@@ -656,17 +737,17 @@ text-decoration: underline;
     line-height: 45.621px;
     letter-spacing: -1.05px;
     }
-.footer__nav {
+.footer__inner {
     padding-bottom: 41px;
     }
+.nav {
+    padding-bottom: 41px;
+}
 .reviews__title {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.42px;
-}
-.service__img {
-    height: 240px;
 }
 .ex-project__container {
 height: 408px;
@@ -681,7 +762,8 @@ height: 408px;
     font-weight: 400;
     letter-spacing: -0.42px;
 }
-.menu__link {
+.nav__link {
+    padding: 10px 15px;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: -0.36px;
