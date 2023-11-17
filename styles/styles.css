@@ -243,7 +243,6 @@ text-decoration: underline;
 }
 .service__btn {
     width: 100%;
-    max-height: 153px;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -496,6 +495,12 @@ text-decoration: underline;
 .project__item {
     margin-bottom: 80px;
 }
+.project__text {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.75px;
+}
 .contacts {
     padding-top: 120px;
     padding-bottom: 80px;
@@ -509,18 +514,43 @@ text-decoration: underline;
 .service__item {
     padding-bottom: 80px;
 }
+.service__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    text-transform: uppercase;
+}
 .service__price {
     padding: 6px 26px 5px 26px;
     top: 30px;
     left: 30px;
-    font-family: 'Manrope' , sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
+}
+.service__text {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.75px;
 }
 .reviews {
     padding-top: 117px;
     padding-bottom: 120px;
+}
+.reviews__name {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.05px;
+}
+.reviews__review {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.6px;
 }
 .ex-project__container {
     max-height: 536px;
@@ -654,6 +684,13 @@ text-decoration: underline;
 .service__box {
     grid-template-columns: 1fr ;
     }
+.service__price {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+}
 .service__title {
     font-size: 14px;
     font-weight: 400;
@@ -670,9 +707,6 @@ text-decoration: underline;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.54px;
-    }
-    .service__img {
-        height: 240px;
     }
 .service__btn {
     text-align: center;
