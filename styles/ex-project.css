@@ -1,4 +1,37 @@
-
+.ex-project {
+    background-image: url('../resources/Project-example.png');
+    background-size: cover;
+    background-size: no-repeat;
+    background-position: 50%, 50%;
+    max-height: 717px;
+    margin: 0 auto;
+}
+.ex-project__container {
+    position: relative;
+    height: 717px;
+}
+.ex-project__naming {
+   margin: 0 auto;
+    padding-left:35px;
+    padding-top: 80px;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: -0.66px;
+    color: #FFF;
+}
+.ex-project__text { 
+    position: absolute;
+    z-index: 1;
+    bottom: 60px;
+    max-width: 430px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: #FFF;
+}
 @media (max-width: 961px) {
     .ex-project__container {
         max-height: 536px;

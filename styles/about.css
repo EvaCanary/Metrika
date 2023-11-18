@@ -1,4 +1,37 @@
-
+.about {
+    margin-bottom: 150px;
+}
+.about__container {
+    max-width: 1048px;
+}
+.about__title {
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.about__text {
+    margin-bottom: 30px;
+    max-width: 1048px;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.35px;
+    color: #121212;
+}
+.about__btn {
+    max-width: 250px;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: -0.6px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #AD1818;
+    color: #FFFFFF;
+    background-color: #AD1818;
+}
 @media (max-width: 961px) {
 .about {
     margin-bottom: 120px;
