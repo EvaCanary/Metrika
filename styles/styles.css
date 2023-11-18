@@ -468,9 +468,9 @@ text-decoration: underline;
     text-decoration: none;
     color: #FFF ;
 }
-@import "hero.css";
-@import "about.css";
-@import "project.css";
+@import "/styles/hero.css";
+@import "/styles/about.css";
+@import "/styles/project.css";
 @import "service.css";
 @import "reviews.css";
 @import "ex-project.css";
@@ -478,7 +478,7 @@ text-decoration: underline;
 @import "contacts.css";
 @import "footer.css";
 
-@media (max-width: 961px) {
+/*@media (max-width: 961px) {
 .hero {
     margin-bottom: 120px;
     }
