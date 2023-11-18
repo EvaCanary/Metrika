@@ -1,0 +1,41 @@
+
+@media (max-width: 961px) {
+    .ex-project__container {
+        max-height: 536px;
+    }
+    .ex-project__naming {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.6px;
+        color: #FFF;
+    }
+    .ex-project__text {
+        padding-left: 35px;
+        max-width: 377px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.75px;
+    }
+}
+@media (max-width: 576px) {
+.ex-project {
+    max-height: 408px;
+}
+.ex-project__naming {
+    padding-top: 61px;
+    padding-left: 0;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+    color: #FFF;
+}
+.ex-project__container {
+    height: 408px;
+    }
+    .ex-project__text {
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: -0.57px;
+    }}

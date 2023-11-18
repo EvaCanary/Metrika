@@ -1,0 +1,33 @@
+
+@media (max-width: 961px) {
+.footer__menu li {
+    padding: 10px 30px;
+}}
+@media (max-width: 575px) {
+.footer__inner {
+    padding-bottom: 41px;
+    }
+.nav {
+    padding-bottom: 41px;
+}
+.nav__link {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.footer {
+    padding-top: 30px;
+    padding-bottom: 26px;
+}
+.footer__nav {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+.bottom__title {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.39px;
+}
+}
