@@ -80,7 +80,6 @@ text-decoration: underline;
     object-position: 30%;
 }
 /*+ 2 мини блок-карточка*/
-
 .about__container {
     max-width: 1048px;
 }
@@ -340,6 +339,17 @@ text-decoration: underline;
     letter-spacing: -0.9px;
     color: #FFF;
 }
+.gallery__slides {
+    height: 717px
+}
+.gallery__slide {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.gallery__slide_active {
+    display: block;
+}
 .contacts {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -381,7 +391,7 @@ text-decoration: underline;
     flex-wrap: wrap;
     gap: 58px 104px;
 }
-.number__line {
+.number__line { 
     color: #121212;
     text-decoration: none;
 }
@@ -458,32 +468,40 @@ text-decoration: underline;
     text-decoration: none;
     color: #FFF ;
 }
-@media (max-width: 1150px) {
-}
+@import "hero.css";
+@import "about.css";
+@import "project.css";
+@import "service.css";
+@import "reviews.css";
+@import "ex-project.css";
+@import "gallery.css";
+@import "contacts.css";
+@import "footer.css";
+
 @media (max-width: 961px) {
-    .hero {
-        margin-bottom: 120px;
+.hero {
+    margin-bottom: 120px;
     }
-    .hero__title {
-        max-width: 802px;
-        padding-bottom: 30px;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.5px;
+.hero__title {  
+    max-width: 802px;   
+    padding-bottom: 30px;  
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.5px;
     }
-    .hero__text {
-        font-size: 20px;
-        letter-spacing: -0.6px;
+.hero__text {
+    font-size: 20px;
+    letter-spacing: -0.6px;
     }
-    .about {
-        margin-bottom: 120px;
+.about {
+    margin-bottom: 120px;
     }
-    .about__title {
-        margin-bottom: 30px;
+.about__title {
+    margin-bottom: 30px;
     }
-    .about__text {
+.about__text {
     max-width: 690px;
     font-weight: 400;
     font-size: 35px;
@@ -501,10 +519,6 @@ text-decoration: underline;
     line-height: normal;
     letter-spacing: -0.75px;
 }
-.contacts {
-    padding-top: 120px;
-    padding-bottom: 80px;
-        }
 .service {
     width: 100%;
     margin: 0 auto;
@@ -569,6 +583,10 @@ text-decoration: underline;
     line-height: normal;
     letter-spacing: -0.75px;
 }
+.contacts {
+    padding-top: 120px;
+    padding-bottom: 80px;
+        }
 .contacts__title {
     line-height: normal;
     margin-bottom: 74px;
@@ -601,9 +619,10 @@ text-decoration: underline;
     margin-bottom: 80px;
     }
 .hero__title {
-    max-width: 348px;
+    font-style: normal;
+    max-width: 346px;
     padding-bottom: 25px;
-    font-size: 30px;
+    font-size: 31px;
     font-weight: 400;
     line-height: 31.621px; 
     letter-spacing: -0.9px;
@@ -635,7 +654,7 @@ text-decoration: underline;
     letter-spacing: -0.66px;
     }
 .about__btn {
-    height: 51px;
+    line-height: 51px;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.48px;
@@ -719,9 +738,21 @@ text-decoration: underline;
     padding-top: 80px;
     padding-bottom: 80px;
     }
+.contacts__title {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+    }
 .contacts__mail {
     font-size: 35px;
     line-height: 46px;
+    }
+.contacts__number {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.621px;
+    letter-spacing: -1.05px;
     }
 .reviews {
     padding: 80px 0 80px;
@@ -759,13 +790,14 @@ text-decoration: underline;
     letter-spacing: -0.42px;
     color: #FFF;
 }
-.contacts__number {
-    font-size: 35px;
-    font-style: normal;
+.ex-project__container {
+height: 408px;
+}
+.ex-project__text {
+    font-size: 19px;
     font-weight: 400;
-    line-height: 45.621px;
-    letter-spacing: -1.05px;
-    }
+    letter-spacing: -0.57px;
+}
 .footer__inner {
     padding-bottom: 41px;
     }
@@ -776,19 +808,6 @@ text-decoration: underline;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.42px;
-}
-.ex-project__container {
-height: 408px;
-}
-.ex-project__text {
-    font-size: 19px;
-    font-weight: 400;
-    letter-spacing: -0.57px;
-}
-.contacts__title {
-    font-size: 14px;
-    font-weight: 400;
     letter-spacing: -0.42px;
 }
 .nav__link {
