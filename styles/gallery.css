@@ -1,43 +1,14 @@
 .gallery {
     position: relative;
 }
-.gallery__container {
-    margin: 0 auto;
-}
-.gallery__slide {
-    position: relative;
-    height: 717px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-.gallery__slide_active {
-    opacity: 1;
-}
-.gallery__box {
-    height: 100%;
-}
-.box__red {
-    background-color: red;
-}
-.box__blue {
-    background-color: blue;
-}
-.box__yellow {
-    background-color: yellow;
-}
-.box__green {
-    background-color: green;
-}
-.box__img {
-    object-fit: contain;
+.gallery__title-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    z-index: 100;
 }
 .gallery__title {
     position: absolute;
-    top: 60px;
-    left: 15px;
-    z-index: 1;
-    padding-right: 15px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.66px;
@@ -57,32 +28,54 @@
     letter-spacing: -0.9px;
     color: #FFF;
 }
-.gallery__controls {
-    padding-left: 15px;
+.gallery__controls-wrapper {
     position: absolute;
     bottom: 20%;
 }
-@media (min-width: 1180px) {
-.gallery__title {
-    padding-left: 120px;
-    padding-right: 120px;}
-.gallery__text {
-    padding-left: 120px;
-    padding-right: 120px;} 
-.gallery__controls {
-    padding-left: 120px;}
+.gallery__slides {
+    position: relative;
+    height: 717px;
+}
+.gallery__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.gallery__slide_active {
+    opacity: 1;
+}
+.gallery__box {
+    height: 100%;
+}
+.gallery__box .box_red {
+    background-color: red;
+}
+.box_blue {
+    background-color: blue;
+}
+.box_yellow {
+    background-color: yellow;
+}
+.box_green {
+    background-color: green;
+}
+.box__img {
+    object-fit: contain;
 }
 @media (max-width: 961px) {
-.gallery__slide {
-    height: 536px;
-}
+.gallery__slides {
+        height: 536px;
+    }
 .gallery__title {
     font-size: 20px;
     line-height: normal;
     letter-spacing: -0.6px;
     text-transform: uppercase;
 }
-.gallery__controls {
+.gallery__controls-wrapper {
     padding-left: 15px;
     bottom: 30%;
 }
@@ -95,9 +88,9 @@
 }
 }
 @media (max-width: 576px) {
-.gallery__slide {
+.gallery__slides {
     height: 408px;
-}
+    }
 .gallery__slide {
     width: 50% 50%;
 }
@@ -107,12 +100,18 @@
     letter-spacing: -0.42px;
     text-transform: uppercase;
 }
-.gallery__controls {
+.gallery__controls-wrapper {
+    padding: 0;
+    position: absolute;
     bottom: 30%;
+    width: 100%;
+}
+.gallery__controls {
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    
+
 }
 .gallery__text {
     bottom: 60px;
