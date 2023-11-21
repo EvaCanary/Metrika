@@ -52,7 +52,7 @@
 .gallery__control-next,
 .gallery__control-prev {
     border: none;
-    background: url('./../resources/ic_L_gallery.png')left no-repeat;
+    background: url('../resources/ic_L_gallery.png')left no-repeat;
     z-index: 100;
     width: 40px;
     height: 40px;
