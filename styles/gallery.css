@@ -47,19 +47,17 @@
 }
 .gallery__controls-wrapper {
     position: absolute;
-    display: flex;
     bottom: 30%;
-    z-index: 9;
+   
 }
-.gallery__control-next
+.gallery__control-next,
 .gallery__control-prev {
-  display: block;
-  border: none;
-  background: url('./resources/ic_L_gallery.png')left no-repeat;
-  z-index: 9;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+    border: none;
+    background: url('./resources/ic_L_gallery.png')left no-repeat;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 .gallery__control-next {
     transform: rotate(180deg);
@@ -76,7 +74,6 @@
     height: 100%;
     width: 100%;
     opacity: 0;
-    
     transition: opacity 0.5s ease-in-out;
 }
 .gallery__slide_active {
@@ -135,7 +132,12 @@
     position: absolute;
     bottom: 50%;
 }
-.gallery__controls {
+.gallery__control-next,
+.gallery__control-prev { 
+    width: 30px;
+    height: 30px;
+}
+.gallery__controls-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
