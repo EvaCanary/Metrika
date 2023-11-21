@@ -5,6 +5,19 @@
     line-height: normal;
     color: #fff;
 }
+
+/*.gallery::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.52%,
+      rgba(0, 0, 0, 0.4) 82.81%
+    );}*/
 .gallery__title-wrapper {
     position: absolute;
     width: 100%;
@@ -35,18 +48,15 @@
 .gallery__controls-wrapper {
     position: absolute;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    bottom: 30%;
+    z-index: 9;
 }
 .gallery__control-next
 .gallery__control-prev{
   display: block;
   border: none;
   background: none;
-  background: url('/resources/ic_L_gallery.png')left no-repeat;
-  z-index: 9;
-  width: 40px;
-  height: 40px;
+  background: url('resources/ic_L_gallery.png')left no-repeat;
   cursor: pointer;
 }
 .gallery__control-next {
@@ -92,6 +102,7 @@
     text-transform: uppercase;
 }
 .gallery__controls-wrapper {
+    position: absolute;
     bottom: 30%;
 }
 .gallery__text {
