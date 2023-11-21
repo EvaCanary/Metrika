@@ -55,7 +55,7 @@
 .gallery__control-prev {
   display: block;
   border: none;
-  background: url('../resources/ic_L_gallery.png')left no-repeat;
+  background: url('./resources/ic_L_gallery.png')left no-repeat;
   z-index: 9;
   width: 40px;
   height: 40px;
