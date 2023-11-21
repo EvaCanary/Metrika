@@ -48,7 +48,6 @@
 .gallery__controls-wrapper {
     position: absolute;
     bottom: 30%;
-   
 }
 .gallery__control-next,
 .gallery__control-prev {
@@ -131,17 +130,16 @@
     padding: 0;
     position: absolute;
     bottom: 50%;
+    width: 100%;
+}
+.gallery__controls {
+    display: flex;
+    justify-content: space-between;
 }
 .gallery__control-next,
 .gallery__control-prev { 
     width: 30px;
     height: 30px;
-}
-.gallery__controls-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
 }
 .gallery__text {
     bottom: 60px;
