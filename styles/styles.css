@@ -4,7 +4,6 @@
 @import "service.css";
 @import "popup.css";
 @import "reviews.css";
-@import "ex-project.css";
 @import "gallery.css";
 @import "contacts.css";
 @import "footer.css";
@@ -18,4 +17,3 @@ body {
     line-height: 60px;
     color: #121212;
 }
-
