@@ -2,6 +2,7 @@
 @import "about.css";
 @import "project.css";
 @import "service.css";
+@import "popup.css";
 @import "reviews.css";
 @import "ex-project.css";
 @import "gallery.css";
@@ -17,39 +18,4 @@ body {
     line-height: 60px;
     color: #121212;
 }
-/*+ это меню навигации*/
-.header__logo {
-   width: 127px;
-   height: 22px;
-}
-.header__nav {
-    margin-bottom: 74px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav__menu {
-    font-size: 18px;
-    letter-spacing: -0.54px;
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-.header__wrap {
-    display: flex;
-}
 
-.header__menu {
-    display: inline-block;
-    color: #121212;
-}
-.header__menu a {
-    margin-left: 60px;
-    text-decoration: none;
-    transition: all .07s;
-    color: #121212;
-}
-.header__menu a:hover {
-opacity: 50%;
-text-decoration: underline;
-}
