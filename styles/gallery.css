@@ -135,10 +135,12 @@
 .gallery__controls-wrapper {
     padding: 0;
     position: absolute;
-    bottom: 50%;
-    width: 100%;
+    width: calc(100% - 25px);
+    bottom: calc(50% - 16px);
 }
 .gallery__controls {
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
 }
