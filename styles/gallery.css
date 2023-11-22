@@ -36,8 +36,6 @@
 .gallery__text {
     position: absolute;
     z-index: 100;
-    left: 15px;
-    right: 15px;
     bottom: 60px;
     max-width: 443px;
     line-height: normal;
