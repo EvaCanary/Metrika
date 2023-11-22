@@ -6,7 +6,7 @@
     color: #fff;
 }
 
-.gallery::after {
+/*.gallery::after {
     content: "";
     position: absolute;
     top: 0;
@@ -17,7 +17,8 @@
       180deg,
       rgba(0, 0, 0, 0) 0.52%,
       rgba(0, 0, 0, 0.4) 82.81%
-    );}
+    );}*/
+
 .gallery__title-wrapper {
     position: absolute;
     width: 100%;
