@@ -62,7 +62,7 @@
 .gallery__control-next {
     transform: rotate(180deg);
 }
-.gallery__control-next,
+.gallery__control-next:hover,
 .gallery__control-prev:hover {
     opacity: 0.5;
 
