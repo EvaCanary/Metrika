@@ -18,24 +18,57 @@
   <body>
     <header>
       <div class="container">
-        <!-- <div class="header__nav">
+        <nav class="header__nav">
           <img
             id="#logo"
             class="header__logo"
             src="./resources/Metrika_logo.png"
             alt="Метрика"
           />
-          <div class="header__inner">
-            <nav class="nav__menu">
-              <a href="#section-1" class="nav__link">О НАС</a>
-              <a href="#section-2" class="nav__link">ПРОЕКТЫ</a>
-              <a href="#section-3" class="nav__link">УСЛУГИ</a>
-              <a href="#section-4" class="nav__link">КОНТАКТЫ</a>
-            </nav>
+          <div class="header__menu">
+            <a href="#section-1" class="header__link">О НАС</a>
+            <a href="#section-2" class="header__link">ПРОЕКТЫ</a>
+            <a href="#section-3" class="header__link">УСЛУГИ</a>
+            <a href="#section-4" class="header__link">КОНТАКТЫ</a>
           </div>
-        </div>-->
+          <button class="js-burger-btn burger-btn"></button>
+        </nav>
       </div>
     </header>
+    <div class="js-burger burger">
+      <div class="js-burger__content burger__content">
+        <div class="container">
+          <img
+            id="#logo"
+            class="burger__logo"
+            src="./resources/Metrika_logo.png"
+            alt="Метрика"
+          />
+          <div class="burger__inner">
+            <nav class="burger__menu">
+              <a href="#section-1" class="burger__link">О НАС</a>
+              <a href="#section-2" class="burger__link">ПРОЕКТЫ</a>
+              <a href="#section-3" class="burger__link">УСЛУГИ</a>
+              <a href="#section-4" class="burger__link">КОНТАКТЫ</a>
+            </nav>
+            <div class="burger__contacts">
+              <p class="burger__callback">для связи:</p>
+              <p class="burger__number">
+                <a href="tel:+79358954535" class="burger__number-line"
+                  >+7 935 895-45-35</a
+                >
+              </p>
+              <p class="burger__mail">
+                <a href="mailto:hello@mail.com" class="burger__mail-line"
+                  >hello@mail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <button class="burger-close-btn"></button>
+        </div>
+      </div>
+    </div>
     <main>
       <section class="hero">
         <div class="container">
@@ -305,12 +338,12 @@
     <footer>
       <section class="footer">
         <div class="container">
-          <div class="footer_inner">
-            <nav class="nav">
-              <a href="#section-1" class="nav__link">О НАС</a>
-              <a href="#section-2" class="nav__link">ПРОЕКТЫ</a>
-              <a href="#section-3" class="nav__link">УСЛУГИ</a>
-              <a href="#section-4" class="nav__link">КОНТАКТЫ</a>
+          <div class="footer__inner">
+            <nav class="footer__nav">
+              <a href="#section-1" class="footer__link">О НАС</a>
+              <a href="#section-2" class="footer__link">ПРОЕКТЫ</a>
+              <a href="#section-3" class="footer__link">УСЛУГИ</a>
+              <a href="#section-4" class="footer__link">КОНТАКТЫ</a>
             </nav>
           </div>
           <div class="footer__bottom">
@@ -325,5 +358,6 @@
     </footer>
     <script src="styles/gallery.js"></script>
     <script src="styles/popup.js"></script>
+    <script src="styles/burger.js"></script>
   </body>
 </html>

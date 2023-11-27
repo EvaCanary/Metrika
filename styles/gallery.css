@@ -23,7 +23,7 @@
     position: absolute;
     width: 100%;
     top: 60px;
-    z-index: 100;
+    z-index: 1;
 }
 .gallery__title {
     position: absolute;
@@ -35,7 +35,7 @@
 }
 .gallery__text {
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     bottom: 60px;
     max-width: 443px;
     line-height: normal;
@@ -54,7 +54,7 @@
     position: relative;
     border: none;
     background: url('../resources/ic_L_gallery.png')left no-repeat;
-    z-index: 100;
+    z-index: 1;
     width: 40px;
     height: 40px;
     cursor: pointer;
