@@ -28,13 +28,9 @@
     width: 127px;
     height: 22px;
  }
- .burger__inner {
-   
-   
-}
 .burger-btn {
     display: none;
-    background: url('../resources/ic_burger.png');
+    background: url('../resources/burger_big.svg') no-repeat;
 }
 .burger-close-btn {
     position: absolute;
@@ -43,6 +39,7 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
+    background: none;
     background: url('../resources/ic_popup-close.png');
 }
 .burger__menu {
@@ -110,10 +107,14 @@
  }
  @media (max-width: 961px) {
     .burger-btn {
+        position: absolute;
         display: block;
-        width: 60px;
-        height: 14px;
-        border: none;
+        top: 30px;
+        right: 20px;
+        z-index: 100;
+        width: 50px;
+        height: 10px;
+        
     }
 
  }
