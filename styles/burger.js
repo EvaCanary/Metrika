@@ -7,6 +7,8 @@ const burgerNode = document.querySelector('.js-burger');
 const burgerBtnNode = document.querySelector('.js-burger-btn');
 const burgerContentNode = document.querySelector('.js-burger__content')
 
+const elements = document.getElementsByClassName('burger__link');Array.from(elements).forEach(element => {
+element.addEventListener('click', toggleBurger);});
 burgerBtnNode.addEventListener('click', toggleBurger);
 
 burgerNode.addEventListener('click', (event) => {
