@@ -14,7 +14,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.08s ease;
+    transition: all .3s ease;
 }
 .burger_open {
     opacity: 1;
