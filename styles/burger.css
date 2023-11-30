@@ -46,7 +46,7 @@
     align-items: center;
   }
 .burger-btn {
-    display: block;
+    display: none;
     position: absolute;
     z-index: 100;
     width: 50px;
