@@ -85,9 +85,6 @@
     margin: 0 auto;
     max-width: cover;
     }
-.service__box {
-    grid-template-columns: 1fr ;
-    }
 .service__price {
     font-size: 14px;
     font-style: normal;
